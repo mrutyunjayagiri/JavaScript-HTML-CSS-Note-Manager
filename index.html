@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS NOTE</title>
+    <link rel="icon" href="/assets/img/title_icon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/app.js">
+
+    </script>
+</head>
+
+<body>
+    <div class="main-content">
+        <header>
+
+            <h1>
+                JS NOTE
+            </h1>
+            <p>
+                Your Cache Note Manager
+            </p>
+
+        </header>
+        <!-- Reset -->
+        <div class="reset-clear">
+            <button type="submit" onclick="onClear()" id="clearBtn">CLEAR</button>
+            <button type="submit" onclick="onReset()" id="resetBtn">RESET</button>
+
+        </div>
+
+        <!-- Search -->
+        <div id="search-error-content" class="error-content"></div>
+        <div class="search-content">
+            <label for="fname">Enter note ID</label>
+            <input type="text" id="searchId" name="title" placeholder="Enter your title or ID to be Searched">
+            <button type="submit" onclick="onSearch()" id="searchBtn">SEARCH</button>
+        </div>
+        <div id="search-result">
+        </div>
+        <!-- Search Closed -->
+
+
+        <BR>
+
+        <div class="error-content" id="add-note-error"></div>
+
+        <!-- Add Note -->
+        <div class="add-note">
+            <label for="title" id="note-header">Add a new note</label>
+            <input type="text" id="addNoteId" name="id" placeholder="Your Note ID">
+            <input type="text" id="addNoteTitle" name="title" placeholder="Your title">
+            <input type="text" id="addNoteDescription" name="message" placeholder="Your Note Message">
+            <button type="submit" onclick="onAddNote()" id="addNoteBtn">SAVE NOTE</button>
+        </div>
+
+        <!-- Total Note Count -->
+        <p id="total-notes">
+        </p>
+        <!-- Result -->
+        <div class="group-notes" id="result">
+        </div>
+    </div>
+    <footer class="footer">
+        Created by <a href="http://codingbhai.com/about" target="_blank" rel="noopener noreferrer"><strong>Mrutyunjaya Giri</strong></a>
+        <br><br>It is useful to you, Do not forget to give a star in <a href="http://github.com/mrutyunjayagiri" target="_blank" rel="noopener noreferrer">Github</a>
+    </footer>
+</body>
+
+</html>

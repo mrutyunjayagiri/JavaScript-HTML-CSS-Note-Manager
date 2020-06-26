@@ -1,0 +1,165 @@
+body {
+    margin: 0 auto;  /*top and bottom:0 ,left and right: auto */
+    padding: 0 16px;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 864px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+header p {
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 48px;
+}
+footer {
+  color: #555555;
+  border-top: 1px solid grey;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+
+.main-content {
+    flex-grow: 1;
+} 
+
+
+.portatrait {
+    width: 874px;
+}
+
+/* Style For TextField */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* background-image: url('../aasets/img/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 40px; */
+
+}
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .form-content {
+      margin-top: 25px;
+  }
+  .search-content #searchBtn {
+    background-color: #6179e7;
+
+  }.search-content #resetBtn {
+    background-color: #ec563b;
+
+  }
+  .search-content button {
+   font-weight: bold;
+    color: white;
+    padding: 14px 20px;
+    margin: 16px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+  }
+  .add-note button {
+    font-weight: bold;
+    background-color: #21ce38;
+    color: white;
+    padding: 14px 20px;
+    margin: 16px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+  }
+  .note {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      background: rgb(235, 235, 235);
+      padding: 10px 10px 1px 10px;
+  }
+  .note button {
+    width: 10%;
+    margin-right: 10px;
+    color: white;
+    padding: 8px;
+    margin: 16px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+  }
+  .note .edit {
+    background-color: #7218da;
+  }
+  .note .delete {
+    margin-left: 10px;
+    background-color: #eb2121;
+  }
+  .error-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  
+    border-radius: 6px;
+    font-weight: bold;
+color: #eb2121;
+}
+
+.reset-clear {
+  text-align: right;
+}
+.reset-clear button {
+  width: 10%;
+  margin-right: 10px;
+  color: rgb(83, 5, 5);
+  padding: 8px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+ 
+}
+
+  /* Mobile */
+  @media screen and (max-width: 485px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .portatrait {
+        width: 320px;
+    }
+  }
+
+  /* Medium */
+  @media screen and (max-width: 960px) {
+    h1 {
+        font-size: 56px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .portatrait {
+        width: 480px;
+    }
+  }
